@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+@font-face {
+    font-family: Special;
+    src: url('fonts/zentry-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Basic;
+    src: url('fonts/general.woff2') format('woff2');
+}
+
+@theme {
+    --color-background: white;
+    --font-special: Special;
+    --font-basic: Basic
+}
