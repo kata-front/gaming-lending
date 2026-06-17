@@ -7,9 +7,9 @@ const Button: FC<{
 }> = ({ children, leftIconPath, rightIconPath }) => {
   return (
     <button className='cursor-pointer min-w-39 w-[25%] font-basic bg-yellow-400 p-3 rounded-2xl flex justify-center items-center gap-2'>
-      {leftIconPath}
+      {leftIconPath && <img src={leftIconPath}/>}
       {children}
-      {rightIconPath}
+      {rightIconPath && <img src={rightIconPath}/>}
     </button>
   );
 };

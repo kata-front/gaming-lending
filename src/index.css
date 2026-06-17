@@ -15,3 +15,13 @@
     --font-special: Special;
     --font-basic: Basic
 }
+
+* {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
