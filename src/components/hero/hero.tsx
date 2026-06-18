@@ -38,21 +38,20 @@ const Hero = () => {
   );
 
   useGSAP(() => {
-    gsap.fromTo(
-      containerRef.current,
-      {
-        clipPath: "polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%)",
+    gsap.set(containerRef.current, {
+      clipPath: "polygon(100% 0%, 100% 100%, 0% 100%, 0% 0%)",
+    });
+
+    gsap.to(containerRef.current, {
+      clipPath: "polygon(69% 6%, 91% 93%, 0% 100%, 12% 6%)",
+      borderRadius: '25px',
+      scrollTrigger: {
+        trigger: containerRef.current,
+        start: "bottom 90%",
+        end: "bottom center",
+        scrub: 2,
       },
-      {
-        clipPath: "polygon(69% 6%, 91% 93%, 0% 100%, 12% 6%)",
-        scrollTrigger: {
-          trigger: containerRef.current,
-          start: "bottom 90%",
-          end: "bottom center",
-          scrub: 2,
-        },
-      },
-    );
+    });
   }, []);
 
   return (
