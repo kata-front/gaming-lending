@@ -94,9 +94,9 @@ const Hero = () => {
             autoPlay
           ></video>
 
-          <div className="max-w-[40vw] absolute top-10 left-10 flex flex-col gap-5 z-10">
+          <div className="max-w-[40vw] absolute top-15 left-10 flex flex-col gap-5 z-10">
             <h1 className="font-special text-7xl md:text-9xl text-white ">
-              Enter the Battlefield
+              Start
             </h1>
             <p className="text-2xl text-white font-basic">
               Join millions of players in the most intense multiplayer shooter.
@@ -104,12 +104,12 @@ const Hero = () => {
             <Button leftIconPath="img/play.svg">Play Now</Button>
           </div>
 
-          <h1 className="z-10 font-special text-7xl md:9xl text-white absolute bottom-10 right-10">
+          <h1 className="z-10 font-special text-7xl md:text-9xl text-white absolute bottom-10 right-10">
             Gaming
           </h1>
         </div>
       </div>
-      <h1 className="font-special text-7xl md:9xl text-black absolute bottom-10 right-10">
+      <h1 className="font-special text-7xl md:text-9xl text-black absolute bottom-10 right-10">
         Gaming
       </h1>
     </>

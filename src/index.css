@@ -12,8 +12,25 @@
 
 @theme {
     --color-background: white;
+    --color-bg-dark: rgb(70, 70, 70);
     --font-special: Special;
     --font-basic: Basic
+}
+
+@keyframes wave {
+    0%, 100%  {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px);
+    }
+}
+
+.animation-wave {
+    animation-name: wave;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 * {
