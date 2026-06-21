@@ -10,11 +10,17 @@
     src: url('fonts/general.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: Zentry;
+    src: url('fonts/robert-regular.woff2') format('woff2');
+}
+
 @theme {
     --color-background: white;
     --color-bg-dark: rgb(70, 70, 70);
     --font-special: Special;
-    --font-basic: Basic
+    --font-basic: Basic;
+    --font-zentry: Zentry
 }
 
 @keyframes wave {
